@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    font-family: 'Archivo', sans-serif;
+    color: #3f3f3f;
+  }
+}
+
+@layer utilities {
+  .tr--container {
+    @apply container mx-auto md:px-32;
+  }
+}
+
+@layer components {
+}

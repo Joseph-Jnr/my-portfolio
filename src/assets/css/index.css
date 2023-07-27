@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primaryColor: #0e1012;
+  }
+
   *,
   *::before,
   *::after {
@@ -10,20 +16,125 @@
     padding: unset;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    @apply text-slate-400;
   }
 
   html,
-  body {
-    font-family: 'Archivo', sans-serif;
-    color: #3f3f3f;
+  main {
+    background: var(--primaryColor);
+    overflow-x: hidden;
   }
 }
 
 @layer utilities {
   .tr--container {
-    @apply container mx-auto md:px-32;
+    @apply container mx-auto md:px-48;
+  }
+
+  .section--padding {
+    @apply py-24;
+  }
+  /* General utils end */
+
+  /* Flex Utilities */
+  .tr--flex-row-center {
+    @apply flex items-center justify-center;
+  }
+
+  .tr--flex-justify-center {
+    @apply flex justify-center;
+  }
+
+  .tr--flex-justify-between {
+    @apply flex justify-between;
+  }
+
+  .tr--flex-row-between {
+    @apply flex items-center justify-between;
+  }
+  /* End of Flex Utilities */
+
+  .gradient--text {
+    background: linear-gradient(45deg, #e5f9fc, #fffaea, #ffc3f0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 1.2;
+    width: fit-content;
+  }
+
+  /* Blink animation */
+  .blink {
+    animation: fadeInOut 2s infinite;
+  }
+
+  @keyframes fadeInOut {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
   }
 }
 
 @layer components {
+  .logo h3 {
+    @apply text-slate-400 font-semibold text-xl;
+  }
+
+  header {
+    @apply tr--container relative py-36;
+  }
+
+  header .intro-area h1 {
+    @apply text-5xl md:text-6xl font-semibold;
+    display: inline-block;
+  }
+
+  header .intro-area p {
+    @apply md:w-1/2 mt-5 text-sm md:text-lg;
+    line-height: 2rem;
+  }
+
+  header .header-image {
+    @apply mt-20 md:mt-0;
+  }
+
+  header .header-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header .header-image img:first-child {
+    @apply relative right-0 top-0 w-96;
+  }
+
+  header .header-image img:last-child {
+    @apply absolute bottom-0 right-0 rounded-lg w-64;
+  }
+  /* 
+  .about-section {
+    @apply bg-[#16161A];
+  } */
+
+  .about-section img {
+    @apply md:absolute top-0 -left-2 rotate-90;
+  }
+
+  /* Projects */
+  .project-card {
+    background: #16161a;
+    background: linear-gradient(45deg, #000 20%, #1b1b20 100%);
+    border: 1px solid #16161a;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .project-card:hover {
+    @apply cursor-pointer;
+    border: 1px solid #1e1e1f;
+  }
+  /* Projects end */
 }

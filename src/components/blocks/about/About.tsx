@@ -10,6 +10,7 @@ const About = () => {
       projectsSection.scrollIntoView({ behavior: 'smooth' })
     }
   }
+
   return (
     <section className='about-section relative section--padding'>
       <img className='memoji' src={Memoji} width={200} alt='' />
@@ -20,23 +21,22 @@ const About = () => {
         </h1>
         <Stack spacing='lg' className='md:px-44 mt-10'>
           <p>
-            My name is Joseph Nwobodo Jnr. A meticulous and purpose-driven web
-            developer that incorporates solid technical bases with creative user
-            interface design with a track record in creating unique and
-            responsive solutions.
+            My name is Joseph Nwobodo Jnr. I am a purpose-driven web developer
+            that incorporates solid technical bases with creative user interface
+            design with a track record in creating unique and responsive
+            solutions.
           </p>
           <p>
-            I have three years of experience crafting and testing user
-            interfaces, combining aesthetic considerations with technical
-            expertise to produce visually attractive and highly functional sites
-            and apps, and ensuring customer satisfaction. Looking forward to
-            making a positive impact in your company and adding value one day at
-            a time.
+            With three years of experience crafting and building sleek user
+            interfaces, I have built products for individuals, institutions, and
+            companies cutting accross different sectors such as education,
+            transportation & logistics, real estate, etc; ensuring customer
+            satisfaction. I am currently a Frontend Engineer at Trouvé.
           </p>
         </Stack>
 
-        <div className='bright--bg md:p-20 mt-20'>
-          <div className='grid md:grid-cols-2 gap-40'>
+        <div className='md:bright--bg md:p-20 mt-20'>
+          <div className='grid md:grid-cols-2 gap-28'>
             <div className='img-area'>
               {
                 <div className='profile-image relative'>

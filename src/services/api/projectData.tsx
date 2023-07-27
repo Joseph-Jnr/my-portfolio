@@ -14,8 +14,9 @@ const projectData = [
   {
     id: 1,
     thumbnail: Trouve,
-    title: "Trouve's Waitlist",
-    description: "Official waitlist for Trouvé Africa's ride hailing app.",
+    title: 'Trouvé',
+    description:
+      'Book your ride in minutes with trouvé and enjoy the convenience of effortless travel planning.',
     link: 'https://trouve.africa',
     technologies: [
       <IconBrandReact key='react' />,

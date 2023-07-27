@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='tr--container py-10'>
-        <div className='tr--flex-row-between'>
+        <div className='tr--flex-row-center'>
           <Link to='/' className='logo'>
             <h3> {'<JosephJnr />'}</h3>
           </Link>

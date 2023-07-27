@@ -1,3 +1,5 @@
+import { Orbit } from '@/components'
+
 const Header = () => {
   return (
     <>
@@ -11,6 +13,10 @@ const Header = () => {
               Incorporating solid technical bases with creative user interface
               design to create unique products.
             </p>
+          </div>
+
+          <div className='orbit-wrapper'>
+            <Orbit />
           </div>
         </div>
       </header>

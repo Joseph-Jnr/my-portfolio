@@ -7,6 +7,7 @@
 @layer base {
   :root {
     --primaryColor: #0e1012;
+    --secondaryColor: #16161a;
   }
 
   *,
@@ -25,15 +26,29 @@
     background: var(--primaryColor);
     overflow-x: hidden;
   }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @layer utilities {
   .tr--container {
-    @apply container mx-auto md:px-48;
+    @apply container mx-auto lg:px-48;
   }
 
   .section--padding {
     @apply py-24;
+  }
+
+  .bright--bg {
+    background-color: var(--secondaryColor);
   }
   /* General utils end */
 
@@ -82,11 +97,13 @@
 
 @layer components {
   .logo h3 {
-    @apply text-slate-400 font-semibold text-xl;
+    @apply text-slate-400 font-light text-xl;
   }
 
   header {
     @apply tr--container relative py-36;
+    background: url(../images/svg/grid.svg) center;
+    background-repeat: no-repeat;
   }
 
   header .intro-area h1 {
@@ -115,19 +132,53 @@
   header .header-image img:last-child {
     @apply absolute bottom-0 right-0 rounded-lg w-64;
   }
-  /* 
-  .about-section {
-    @apply bg-[#16161A];
-  } */
 
-  .about-section img {
+  .about-section .memoji {
     @apply md:absolute top-0 -left-2 rotate-90;
   }
 
+  .about-section .btn-area {
+    @apply tr--flex-row-center bg-custom-black;
+  }
+
+  .about-section .btn-area button {
+    @apply tr--flex-row-center rounded-md;
+    background: linear-gradient(45deg, #121215 20%, #1d1d28 100%);
+    width: 300px;
+    padding: 30px;
+    border: 1px solid #273543;
+  }
+
+  .about-section .btn-area button:hover {
+    background: linear-gradient(45deg, #0b0b0d 20%, #1d1d28 100%);
+  }
+
+  .profile-image img {
+    @apply relative z-10;
+  }
+
+  .profile-image::after {
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: 2px solid #fff;
+  }
+
   /* Projects */
+  .project-section {
+    position: relative;
+    background: url(../images/svg/grid.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
   .project-card {
+    @apply w-full;
     background: #16161a;
-    background: linear-gradient(45deg, #000 20%, #1b1b20 100%);
+    background: linear-gradient(45deg, #121215 20%, #1d1d28 100%);
     border: 1px solid #16161a;
     transition: all 0.2s ease-in-out;
   }
@@ -137,4 +188,22 @@
     border: 1px solid #1e1e1f;
   }
   /* Projects end */
+
+  .single-contact {
+    background: var(--secondaryColor);
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .single-contact .text {
+    @apply text-left;
+  }
+
+  .single-contact .text h1 {
+    @apply text-base font-semibold;
+  }
+
+  .single-contact .text p {
+    @apply text-sm text-slate-600;
+  }
 }

@@ -1,13 +1,16 @@
 //import { useEffect } from 'react'
 //import { Link } from 'react-router-dom'
 
-import { Header } from '@/components'
+import { About, Header, Navbar, ProjectContainer } from '@/components'
 
 const Home = () => {
   return (
     <>
       <main>
+        <Navbar />
         <Header />
+        <About />
+        <ProjectContainer />
       </main>
     </>
   )

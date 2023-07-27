@@ -1,5 +1,3 @@
-import { GeometricShape, HeaderImg } from '@/assets/images'
-
 const Header = () => {
   return (
     <>
@@ -14,10 +12,6 @@ const Header = () => {
               design to create unique products.
             </p>
           </div>
-          {/* <div className='header-image relative'>
-            <img src={GeometricShape} alt='' />
-            <img src={HeaderImg} alt='' />
-          </div> */}
         </div>
       </header>
     </>

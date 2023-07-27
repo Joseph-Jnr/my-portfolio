@@ -20,6 +20,8 @@ export default {
         warning: '#FFC22E',
         black: '#0C0D0F',
         'custom-gradient': '#6922d1',
+        'custom-black': '#0e1012',
+        'custom-black-100': '#16161a',
       },
     },
   },

@@ -40,7 +40,7 @@
 
 @layer utilities {
   .tr--container {
-    @apply container mx-auto lg:px-48;
+    @apply container mx-auto xl:px-48;
   }
 
   .section--padding {
@@ -48,7 +48,7 @@
   }
 
   .bright--bg {
-    background-color: var(--secondaryColor);
+    @apply bg-custom-black-100;
   }
   /* General utils end */
 
@@ -71,12 +71,11 @@
   /* End of Flex Utilities */
 
   .gradient--text {
+    @apply text-transparent w-fit;
     background: linear-gradient(45deg, #e5f9fc, #fffaea, #ffc3f0);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
     line-height: 1.2;
-    width: fit-content;
   }
 
   /* Blink animation */
@@ -116,15 +115,6 @@
     line-height: 2rem;
   }
 
-  header .header-image {
-    @apply mt-20 md:mt-0;
-  }
-
-  header .header-image img {
-    max-width: 100%;
-    height: auto;
-  }
-
   header .header-image img:first-child {
     @apply relative right-0 top-0 w-96;
   }
@@ -159,12 +149,7 @@
 
   .profile-image::after {
     content: '';
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    border: 2px solid #fff;
+    @apply absolute top-7 left-7 border-2 border-white w-72 h-72 md:w-60 md:h-60 lg:w-72 lg:h-72 mx-auto;
   }
 
   /* Projects */
@@ -176,10 +161,8 @@
   }
 
   .project-card {
-    @apply w-full;
-    background: #16161a;
+    @apply w-full border border-custom-black-100;
     background: linear-gradient(45deg, #121215 20%, #1d1d28 100%);
-    border: 1px solid #16161a;
     transition: all 0.2s ease-in-out;
   }
 
@@ -190,9 +173,7 @@
   /* Projects end */
 
   .single-contact {
-    background: var(--secondaryColor);
-    padding: 15px;
-    border-radius: 10px;
+    @apply bg-custom-black-100 p-4 rounded-lg;
   }
 
   .single-contact .text {
@@ -206,4 +187,224 @@
   .single-contact .text p {
     @apply text-sm text-slate-600;
   }
+}
+
+/* Orbit styles */
+
+.orbit {
+  @apply hidden md:block md:absolute md:right-[300px] xl:right-[400px];
+}
+
+.orbit-icon {
+  @apply tr--flex-row-center w-9 h-9 text-base rounded-full;
+}
+
+.orbit-wrap {
+  list-style: none;
+  font-size: 1.3em;
+}
+
+.orbit-wrap > li {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-wrap > li:hover ul {
+  border: 1px solid #525252;
+}
+.orbit-wrap > li:hover ~ li ul {
+  border-color: rgb(42, 42, 42);
+}
+.orbit-wrap > li:hover ~ li ul li {
+  opacity: 0.4;
+}
+
+ul[class^='ring'] {
+  @apply rounded-full border border-slate-600;
+  transition: all 300ms ease-in-out;
+}
+ul[class^='ring'] li {
+  transition: all 300ms ease-in-out;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6em;
+  height: 1.6em;
+  margin: -0.8em;
+}
+
+.ring-1 {
+  width: 20em;
+  height: 20em;
+  -webkit-animation: clockwiseRotate 30s linear infinite;
+  animation: clockwiseRotate 30s linear infinite;
+}
+.ring-1 i {
+  -webkit-animation: counterClockwiseRotate 30s linear infinite;
+  animation: counterClockwiseRotate 30s linear infinite;
+}
+
+.ring-1 > *:nth-of-type(1) {
+  transform: rotate(126.6666666667deg) translate(10em)
+    rotate(-126.6666666667deg);
+}
+
+.ring-1 > *:nth-of-type(2) {
+  transform: rotate(253.3333333333deg) translate(10em)
+    rotate(-253.3333333333deg);
+}
+
+.ring-1 > *:nth-of-type(3) {
+  transform: rotate(380deg) translate(10em) rotate(-380deg);
+}
+
+.ring-2 {
+  width: 15em;
+  height: 15em;
+  -webkit-animation: clockwiseRotate 25s linear infinite;
+  animation: clockwiseRotate 25s linear infinite;
+}
+.ring-2 i {
+  -webkit-animation: counterClockwiseRotate 25s linear infinite;
+  animation: counterClockwiseRotate 25s linear infinite;
+}
+
+.ring-2 > *:nth-of-type(1) {
+  transform: rotate(47.5deg) translate(7.5em) rotate(-47.5deg);
+}
+
+.ring-2 > *:nth-of-type(2) {
+  transform: rotate(332.5deg) translate(7.5em) rotate(-332.5deg);
+}
+
+.ring-2 > *:nth-of-type(3) {
+  transform: rotate(237.5deg) translate(7.5em) rotate(-237.5deg);
+}
+
+.ring-2 > *:nth-of-type(4) {
+  transform: rotate(142.5deg) translate(7.5em) rotate(-142.5deg);
+}
+
+.ring-3 {
+  width: 10em;
+  height: 10em;
+  -webkit-animation: clockwiseRotate 20s linear infinite;
+  animation: clockwiseRotate 20s linear infinite;
+}
+.ring-3 i {
+  -webkit-animation: counterClockwiseRotate 20s linear infinite;
+  animation: counterClockwiseRotate 20s linear infinite;
+}
+
+.ring-3 > *:nth-of-type(1) {
+  transform: rotate(126.6666666667deg) translate(5em) rotate(-126.6666666667deg);
+}
+
+.ring-3 > *:nth-of-type(2) {
+  transform: rotate(253.3333333333deg) translate(5em) rotate(-253.3333333333deg);
+}
+
+.ring-3 > *:nth-of-type(3) {
+  transform: rotate(380deg) translate(5em) rotate(-380deg);
+}
+
+/* center */
+.orbit-center {
+  @apply tr--flex-row-center;
+  z-index: 5;
+  font-size: 2em;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+  background: #373737;
+  border-radius: 50%;
+}
+.orbit-center:hover .orbit-center__icon {
+  transform: rotateZ(0deg);
+}
+
+.orbit-center__icon {
+  transform: rotateZ(-360deg);
+  transition: all 300ms ease-in-out;
+}
+
+.orbit-wrap > li.orbit-center:hover ~ li > ul {
+  width: 0;
+  height: 0;
+}
+.orbit-wrap > li.orbit-center:hover ~ li > ul * {
+  transform: translate(0, 0);
+}
+
+/* animations */
+@-webkit-keyframes clockwiseRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes clockwiseRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes counterClockwiseRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes counterClockwiseRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+/* icons */
+
+.html {
+  background: #e34f26;
+}
+
+.css,
+.react {
+  background: #1b73ba;
+}
+
+.js {
+  background: goldenrod;
+}
+
+.sass {
+  background: purple;
+}
+
+.bootstrap,
+.redux {
+  background: #7952b3;
+}
+
+.tailwind {
+  background: #fff;
+}
+
+.git {
+  background: red;
+}
+
+.nextjs {
+  background: black;
 }

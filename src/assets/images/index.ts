@@ -1,1 +1,3 @@
-//export { default as Pic } from './pic.jpg'
+export * from './jpg'
+export * from './svg'
+export * from './png'

@@ -1,1 +1,1 @@
-export { default as GeometricShape } from './shape.svg'
+export { default as Grid } from './grid.svg'

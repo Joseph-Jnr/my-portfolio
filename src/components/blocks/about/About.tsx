@@ -31,7 +31,7 @@ const About = () => {
             interfaces, I have built products for individuals, institutions, and
             companies cutting accross different sectors such as education,
             transportation & logistics, real estate, etc; ensuring customer
-            satisfaction. I am currently a Frontend Engineer at Trouvé.
+            satisfaction. I am currently the Lead Frontend Engineer at Trouvé.
           </p>
         </Stack>
 

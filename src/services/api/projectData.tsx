@@ -16,7 +16,7 @@ const projectData = [
     thumbnail: Trouve,
     title: 'Trouvé',
     description:
-      'Book your ride in minutes with trouvé and enjoy the convenience of effortless travel planning.',
+      'Book your ride in minutes and enjoy the convenience of effortless travel planning.',
     link: 'https://trouve.africa',
     technologies: [
       <IconBrandReact key='react' />,
@@ -43,7 +43,7 @@ const projectData = [
     title: 'BI Corporations',
     description:
       'Real Estate agency website for booking and renting apartments.',
-    link: 'https://foodify-v1-dev.netlify.app',
+    link: 'https://bicorporations.com',
     technologies: [
       <IconBrandHtml5 key='html5' />,
       <IconBrandCss3 key='css3' />,

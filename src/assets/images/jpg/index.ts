@@ -1,1 +1,6 @@
 export { default as HeaderImg } from './IMG-20230608-WA0015.jpg'
+export { default as Trouve } from './trouve.jpg'
+export { default as Foodify } from './foodify.jpg'
+export { default as Bic } from './bic.jpg'
+export { default as BicAdmin } from './bic-admin.jpg'
+export { default as AntiSapa } from './anti-sapa.jpg'

@@ -1,5 +1,5 @@
 import { Stack } from '@mantine/core'
-import { HeaderImg, Memoji } from '@/assets/images'
+import { Memoji, Portrait } from '@/assets/images'
 import { Link } from 'react-router-dom'
 import { IconCode, IconFileText } from '@tabler/icons-react'
 
@@ -21,17 +21,21 @@ const About = () => {
         </h1>
         <Stack spacing='lg' className='md:px-44 mt-10'>
           <p>
-            My name is Joseph Nwobodo Jnr. I am a purpose-driven web developer
-            that incorporates solid technical bases with creative user interface
-            design with a track record in creating unique and responsive
-            solutions.
+            My name is Joseph Nwobodo Jnr. I am a highly skilled and
+            results-driven Frontend Developer with three years of hands-on
+            experience in creating visually stunning and user-friendly web
+            applications. Throughout my career, I have demonstrated a keen eye
+            for design, effectively combining aesthetics with technical
+            expertise to produce engaging and responsive interfaces. My
+            commitment to clean code, and accessibility ensures that my projects
+            are not only visually appealing but also performant and scalable.
           </p>
           <p>
-            With three years of experience crafting and building sleek user
-            interfaces, I have built products for individuals, institutions, and
-            companies cutting accross different sectors such as education,
+            I have successfully built products for individuals, institutions,
+            and companies cutting accross different sectors such as education,
             transportation & logistics, real estate, etc; ensuring customer
-            satisfaction. I am currently the Lead Frontend Engineer at Trouvé.
+            satisfaction. I am currently the Lead Frontend Engineer at Trouvé
+            Technologies.
           </p>
         </Stack>
 
@@ -40,7 +44,7 @@ const About = () => {
             <div className='img-area'>
               {
                 <div className='profile-image relative'>
-                  <img src={HeaderImg} alt='' />
+                  <img src={Portrait} alt='Joseph Jnr' />
                 </div>
               }
             </div>
@@ -49,7 +53,10 @@ const About = () => {
                 <button onClick={scrollProjectsToView}>
                   <IconCode className='mr-2' /> My Work
                 </button>
-                <Link to='/'>
+                <Link
+                  target='_blank'
+                  to='https://drive.google.com/file/d/1H2L5CbjRuqm_wXMIEF7zpu6pYcLe-Ryl/view?usp=drive_link'
+                >
                   <button>
                     <IconFileText className='mr-2' /> My Resume
                   </button>

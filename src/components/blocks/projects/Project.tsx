@@ -30,7 +30,7 @@ const Project = ({
               {title}
             </Text>
             <ActionIcon variant='light'>
-              <Link to={link}>
+              <Link target='_blank' to={link}>
                 <IconExternalLink size='1rem' />
               </Link>
             </ActionIcon>

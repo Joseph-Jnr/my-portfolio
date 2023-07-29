@@ -23,17 +23,18 @@ const About = () => {
           <p>
             My name is Joseph Nwobodo Jnr. I am a highly skilled and
             results-driven Frontend Developer with three years of hands-on
-            experience in creating visually stunning and user-friendly web
-            applications. Throughout my career, I have demonstrated a keen eye
-            for design, effectively combining aesthetics with technical
-            expertise to produce engaging and responsive interfaces. My
-            commitment to clean code, and accessibility ensures that my projects
-            are not only visually appealing but also performant and scalable.
+            experience creating visually stunning and user-friendly web
+            applications. I have demonstrated a keen eye for design throughout
+            my career, combining aesthetics with technical expertise to produce
+            engaging and responsive interfaces. My commitment to clean code and
+            accessibility ensures that my projects are visually appealing yet
+            performant and scalable. <br />
+            <b>I seize every opportunity to learn new things.</b>
           </p>
           <p>
             I have successfully built products for individuals, institutions,
-            and companies cutting accross different sectors such as education,
-            transportation & logistics, real estate, etc; ensuring customer
+            and companies cutting across different sectors such as education,
+            transportation & logistics, and real estate, ensuring customer
             satisfaction. I am currently the Lead Frontend Engineer at Trouvé
             Technologies.
           </p>

@@ -1,4 +1,4 @@
-import { AntiSapa, Bic, Foodify, Thumbnail, Trouve } from '@/assets/images'
+import { AntiSapa, Bic, BicAdmin, Foodify, Trouve } from '@/assets/images'
 import {
   IconBrandCss3,
   IconBrandHtml5,
@@ -65,7 +65,7 @@ const projectData = [
   },
   {
     id: 5,
-    thumbnail: Thumbnail,
+    thumbnail: BicAdmin,
     title: 'Admin Dashboard',
     description: 'Manage and monitor website data and activities in one place.',
     link: '',

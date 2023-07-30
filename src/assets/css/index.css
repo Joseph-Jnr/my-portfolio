@@ -147,15 +147,16 @@
   }
 
   .about-section .btn-area button {
-    @apply tr--flex-row-center rounded-md;
-    background: linear-gradient(45deg, #121215 20%, #1d1d28 100%);
+    @apply relative tr--flex-row-center rounded-md;
     width: 300px;
     padding: 30px;
     border: 1px solid #273543;
+    transition: all 0.5s ease-in-out;
   }
 
   .about-section .btn-area button:hover {
-    background: linear-gradient(45deg, #0b0b0d 20%, #1d1d28 100%);
+    background: linear-gradient(45deg, #121215 20%, #1d1d28 100%);
+    /* background: linear-gradient(45deg, #0b0b0d 20%, #1d1d28 100%); */
   }
 
   .profile-image img {

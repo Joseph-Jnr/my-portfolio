@@ -20,7 +20,7 @@ const SingleContact = ({ icon, name, handle, link }: SingleContactProps) => {
         </div>
         <div className='text'>
           <h1>{name}</h1>
-          <Link to={link}>
+          <Link target='_blank' to={link}>
             <p>{handle}</p>
           </Link>
         </div>

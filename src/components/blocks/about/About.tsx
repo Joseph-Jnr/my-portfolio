@@ -40,11 +40,9 @@ const About = () => {
         <div className='md:bright--bg md:p-20 mt-20'>
           <div className='grid md:grid-cols-2 gap-28'>
             <div className='img-area'>
-              {
-                <div className='profile-image relative'>
-                  <img src={Portrait} alt='Joseph Jnr' />
-                </div>
-              }
+              <div className='profile-image relative'>
+                <img src={Portrait} alt='Joseph Jnr' />
+              </div>
             </div>
             <div className='btn-area tr--flex-row-center'>
               <Stack spacing='xl'>

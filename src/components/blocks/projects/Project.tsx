@@ -35,7 +35,7 @@ const Project = ({
               </Link>
             </ActionIcon>
           </Group>
-          <Text size='sm' color='dimmed'>
+          <Text size='sm' color='dimmed' className='desc'>
             {description}
           </Text>
 

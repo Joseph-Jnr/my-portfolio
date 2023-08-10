@@ -97,11 +97,7 @@
   /* End of Flex Utilities */
 
   .gradient--text {
-    @apply text-transparent w-fit;
-    background: linear-gradient(45deg, #e5f9fc, #fffaea, #ffc3f0);
-    background-clip: text;
-    -webkit-background-clip: text;
-    line-height: 1.2;
+    @apply bg-gradient-to-tr from-[#e5f9fc] via-[#fffaea] to-[#ffc3f0] bg-clip-text text-transparent w-fit leading-tight;
   }
 
   /* Blink animation */

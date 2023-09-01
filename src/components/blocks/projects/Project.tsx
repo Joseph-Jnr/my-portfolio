@@ -37,19 +37,19 @@ const Project = ({
 
             <Group>
               {links.github && (
-                <ActionIcon variant='light'>
-                  <Link target='_blank' to={links.github}>
+                <Link target='_blank' to={links.github}>
+                  <ActionIcon>
                     <IconBrandGithub size='1rem' />
-                  </Link>
-                </ActionIcon>
+                  </ActionIcon>
+                </Link>
               )}
 
               {links.site && (
-                <ActionIcon variant='light'>
-                  <Link target='_blank' to={links.site}>
+                <Link target='_blank' to={links.site}>
+                  <ActionIcon>
                     <IconExternalLink size='1rem' />
-                  </Link>
-                </ActionIcon>
+                  </ActionIcon>
+                </Link>
               )}
             </Group>
           </Group>

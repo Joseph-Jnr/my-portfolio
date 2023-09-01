@@ -169,16 +169,15 @@
 
   .about-section .btn-area button:hover {
     background: linear-gradient(45deg, #121215 20%, #1d1d28 100%);
-    /* background: linear-gradient(45deg, #0b0b0d 20%, #1d1d28 100%); */
   }
 
   .profile-image img {
-    @apply relative z-10 w-72;
+    @apply relative z-10;
   }
 
   .profile-image::after {
     content: '';
-    @apply absolute top-5 left-7 border-2 border-white w-72 h-72 md:w-60 md:h-60 lg:w-72 lg:h-72 mx-auto;
+    @apply absolute top-5 left-7 border-2 border-white w-72 h-72 md:w-60 md:h-60 lg:w-72 lg:h-72 mx-auto rounded-lg;
   }
 
   /* Projects */

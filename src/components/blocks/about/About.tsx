@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Stack } from '@mantine/core'
+import { Image, Stack } from '@mantine/core'
 import { Memoji, Portrait } from '@/assets/images'
 import { Link } from 'react-router-dom'
 import { IconCode, IconFileText } from '@tabler/icons-react'
@@ -38,10 +38,10 @@ const About = () => {
         </Stack>
 
         <div className='md:bright--bg md:p-20 mt-20'>
-          <div className='grid md:grid-cols-2 gap-28'>
+          <div className='grid md:grid-cols-2 justify-center gap-28'>
             <div className='img-area'>
               <div className='profile-image relative'>
-                <img src={Portrait} alt='Joseph Jnr' />
+                <Image maw={288} radius='md' src={Portrait} alt='Joseph Jnr' />
               </div>
             </div>
             <div className='btn-area tr--flex-row-center'>

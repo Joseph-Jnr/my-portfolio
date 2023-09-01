@@ -17,7 +17,10 @@ const projectData = [
     title: 'Trouvé',
     description:
       'Book your ride in minutes and enjoy the convenience of effortless travel planning.',
-    link: 'https://trouve.africa',
+    links: {
+      github: '',
+      site: 'https://trouve.africa',
+    },
     technologies: [
       <IconBrandReact key='react' />,
       <IconBrandTypescript key='typescript' />,
@@ -31,7 +34,10 @@ const projectData = [
     title: 'Foodify',
     description:
       'An online restaurant for ordering local and intercontinental dishes.',
-    link: 'https://foodify-v1-dev.netlify.app',
+    links: {
+      github: '',
+      site: 'https://foodify-v1-dev.netlify.app',
+    },
     technologies: [
       <IconBrandReact key='react' />,
       <IconBrandTailwind key='tailwind' />,
@@ -43,7 +49,10 @@ const projectData = [
     title: 'BI Corporations',
     description:
       'Real Estate agency website for booking and renting apartments.',
-    link: 'https://bicorporations.com',
+    links: {
+      github: '',
+      site: 'https://bicorporations.com',
+    },
     technologies: [
       <IconBrandHtml5 key='html5' />,
       <IconBrandCss3 key='css3' />,
@@ -57,7 +66,10 @@ const projectData = [
     thumbnail: AntiSapa,
     title: 'Anti Sapa',
     description: 'Fintech company app landing page to help people save money.',
-    link: 'https://anti-sapa.netlify.app/',
+    links: {
+      github: 'https://github.com/Joseph-Jnr/anti-sapa',
+      site: 'https://anti-sapa.netlify.app/',
+    },
     technologies: [
       <IconBrandReact key='react' />,
       <IconBrandTailwind key='tailwind' />,
@@ -68,7 +80,10 @@ const projectData = [
     thumbnail: BicAdmin,
     title: 'Admin Dashboard',
     description: 'Manage and monitor website data and activities in one place.',
-    link: '',
+    links: {
+      github: '',
+      site: '',
+    },
     technologies: [
       <IconBrandHtml5 key='html5' />,
       <IconBrandCss3 key='css3' />,

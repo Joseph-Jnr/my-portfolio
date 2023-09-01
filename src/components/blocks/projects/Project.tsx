@@ -1,13 +1,18 @@
 import { ReactNode } from 'react'
 import { Card, Image, Text, ActionIcon, Group } from '@mantine/core'
-import { IconExternalLink } from '@tabler/icons-react'
+import { IconBrandGithub, IconExternalLink } from '@tabler/icons-react'
 import { Link } from 'react-router-dom'
+
+interface Links {
+  github: string
+  site: string
+}
 
 type ProjectTypes = {
   title: string
   thumbnail: any
   description: string
-  link: string
+  links: Links
   technologies: ReactNode
 }
 
@@ -15,7 +20,7 @@ const Project = ({
   title,
   thumbnail,
   description,
-  link,
+  links,
   technologies,
 }: ProjectTypes) => {
   return (
@@ -29,11 +34,24 @@ const Project = ({
             <Text weight={500} className='gradient--text'>
               {title}
             </Text>
-            <ActionIcon variant='light'>
-              <Link target='_blank' to={link}>
-                <IconExternalLink size='1rem' />
-              </Link>
-            </ActionIcon>
+
+            <Group>
+              {links.github && (
+                <ActionIcon variant='light'>
+                  <Link target='_blank' to={links.github}>
+                    <IconBrandGithub size='1rem' />
+                  </Link>
+                </ActionIcon>
+              )}
+
+              {links.site && (
+                <ActionIcon variant='light'>
+                  <Link target='_blank' to={links.site}>
+                    <IconExternalLink size='1rem' />
+                  </Link>
+                </ActionIcon>
+              )}
+            </Group>
           </Group>
           <Text size='sm' color='dimmed' className='desc'>
             {description}

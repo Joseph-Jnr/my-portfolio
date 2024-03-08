@@ -1,4 +1,11 @@
-import { AntiSapa, Bic, BicAdmin, Foodify, Trouve } from '@/assets/images'
+import {
+  AntiSapa,
+  Bic,
+  BicAdmin,
+  Foodify,
+  Shipshore,
+  Trouve,
+} from '@/assets/images'
 import {
   IconBrandCss3,
   IconBrandHtml5,
@@ -8,6 +15,7 @@ import {
   IconBrandBootstrap,
   IconBrandPhp,
   IconBrandSass,
+  IconBrandNextjs,
 } from '@tabler/icons-react'
 
 const projectData = [
@@ -45,20 +53,17 @@ const projectData = [
   },
   {
     id: 3,
-    thumbnail: Bic,
-    title: 'BI Corporations',
+    thumbnail: Shipshore,
+    title: 'Shipshore Ltd.',
     description:
-      'Real Estate agency website for booking and renting apartments.',
+      'A super reliable logistics company that revolutionalizes your supply chain.',
     links: {
       github: '',
-      site: 'https://bicorporations.com',
+      site: 'https://www.shipshoreservs.co.uk/',
     },
     technologies: [
-      <IconBrandHtml5 key='html5' />,
-      <IconBrandCss3 key='css3' />,
-      <IconBrandBootstrap key='bootstrap' />,
-      <IconBrandPhp key='php' />,
-      <IconBrandSass key='sass' />,
+      <IconBrandNextjs key='next' />,
+      <IconBrandTypescript key='typescript' />,
     ],
   },
   {

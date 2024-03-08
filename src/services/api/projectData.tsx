@@ -1,11 +1,4 @@
-import {
-  AntiSapa,
-  Bic,
-  BicAdmin,
-  Foodify,
-  Shipshore,
-  Trouve,
-} from '@/assets/images'
+import { AntiSapa, BicAdmin, Foodify, Shipshore, Trouve } from '@/assets/images'
 import {
   IconBrandCss3,
   IconBrandHtml5,

@@ -48,6 +48,11 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  /* This hides the native scrollbar */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   /* 
 //gradient scrollbar
   ::-webkit-scrollbar {

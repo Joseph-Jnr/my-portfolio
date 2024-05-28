@@ -16,7 +16,7 @@ const About = () => {
   }
 
   const text =
-    'My name is Joseph Nwobodo Jnr. I am a highly skilled and results-driven Frontend Developer with about three (3) years of hands-on experience creating visually stunning and user-friendly web applications. I have demonstrated a keen eye for design throughout my career, combining aesthetics with technical expertise to produce engaging and responsive interfaces. My commitment to clean code and accessibility ensures that my projects are visually appealing yet performant and scalable. I have successfully built products for individuals, institutions, and companies cutting across different sectors such as education, transportation & logistics, and real estate, ensuring customer satisfaction. I am currently the Lead Frontend Engineer at Trouvé Technologies.'
+    'My name is Joseph Nwobodo Jnr. I am a highly skilled and results-driven Frontend Developer with about four (4) years of hands-on experience creating visually stunning and user-friendly web applications. I have demonstrated a keen eye for design throughout my career, combining aesthetics with technical expertise to produce engaging and responsive interfaces. My commitment to clean code and accessibility ensures that my projects are visually appealing yet performant and scalable. I have successfully built products for individuals, institutions, and companies cutting across different sectors such as education, transportation & logistics, and real estate, ensuring customer satisfaction. I am currently the Lead Frontend Engineer at Trouvé Technologies.'
 
   return (
     <section className='about-section relative section--padding'>
@@ -51,7 +51,7 @@ const About = () => {
                 </button>
                 <Link
                   target='_blank'
-                  to='https://drive.google.com/file/d/1sTrMTvx64zHzdri7MuZInFqREFXDgLt2/view?usp=drive_link'
+                  to='https://drive.google.com/file/d/129JFavz12VWwE9gBmDfslKMveReCpGjx/view?usp=drive_link'
                 >
                   <button>
                     <IconFileText className='mr-2' /> My Resume

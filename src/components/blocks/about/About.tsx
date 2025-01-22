@@ -16,45 +16,45 @@ const About = () => {
   }
 
   const text =
-    'My name is Joseph Nwobodo Jnr. I am a highly skilled and results-driven Frontend Developer with about four (4) years of hands-on experience creating visually stunning and user-friendly web applications. I have demonstrated a keen eye for design throughout my career, combining aesthetics with technical expertise to produce engaging and responsive interfaces. My commitment to clean code and accessibility ensures that my projects are visually appealing yet performant and scalable. I have successfully built products for individuals, institutions, and companies cutting across different sectors such as education, transportation & logistics, and real estate, ensuring customer satisfaction. I am currently the Lead Frontend Engineer at Trouvé Technologies.'
+    'My name is Joseph Nwobodo Jnr. I am a highly skilled and results-driven Frontend Developer with about six (6) years of hands-on experience creating visually stunning and user-friendly web applications. I have demonstrated a keen eye for design throughout my career, combining aesthetics with technical expertise to produce engaging and responsive interfaces. My commitment to clean code and accessibility ensures that my projects are visually appealing yet performant and scalable. I have successfully built products for individuals, institutions, and companies cutting across different sectors such as fin-tech, education, transportation & logistics, and real estate, ensuring customer satisfaction. I am currently the Lead Frontend Engineer at Trouvé Technologies.'
 
   return (
-    <section className='about-section relative section--padding'>
-      <img className='memoji' src={Memoji} width={200} alt='' />
+    <section className="about-section relative section--padding">
+      <img className="memoji" src={Memoji} width={200} alt="" />
 
-      <div className='text-center tr--container pb-20'>
-        <h1 className='blink gradient--text mx-auto md:text-5xl'>
+      <div className="text-center tr--container pb-20">
+        <h1 className="blink gradient--text mx-auto md:text-5xl">
           Hello there!
         </h1>
-        <Stack spacing='lg' className='bio md:px-44 mt-10'>
+        <Stack spacing="lg" className="bio md:px-44 mt-10">
           <p>
             <Typewriter onFinished={() => setTypewriterEnd(true)} text={text} />
           </p>
           {typewriterEnd && (
-            <b className='italic' data-aos='zoom-in'>
+            <b className="italic" data-aos="zoom-in">
               I seize every opportunity to learn new things.
             </b>
           )}
         </Stack>
 
-        <div className='md:bright--bg md:p-20 mt-20'>
-          <div className='grid md:grid-cols-2 justify-center gap-28'>
-            <div className='img-area'>
-              <div className='profile-image relative'>
-                <Image maw={288} radius='md' src={Portrait} alt='Joseph Jnr' />
+        <div className="md:bright--bg md:p-20 mt-20">
+          <div className="grid md:grid-cols-2 justify-center gap-28">
+            <div className="img-area">
+              <div className="profile-image relative">
+                <Image maw={288} radius="md" src={Portrait} alt="Joseph Jnr" />
               </div>
             </div>
-            <div className='btn-area tr--flex-row-center'>
-              <Stack spacing='xl'>
+            <div className="btn-area tr--flex-row-center">
+              <Stack spacing="xl">
                 <button onClick={scrollProjectsToView}>
-                  <IconCode className='mr-2' /> My Work
+                  <IconCode className="mr-2" /> My Work
                 </button>
                 <Link
-                  target='_blank'
-                  to='https://drive.google.com/file/d/129JFavz12VWwE9gBmDfslKMveReCpGjx/view?usp=drive_link'
+                  target="_blank"
+                  to="https://drive.google.com/file/d/1sHgLB8aZ_ef4EQjSf3qt1i8j4lKZBkyC/view?usp=drive_link"
                 >
                   <button>
-                    <IconFileText className='mr-2' /> My Resume
+                    <IconFileText className="mr-2" /> My Resume
                   </button>
                 </Link>
               </Stack>

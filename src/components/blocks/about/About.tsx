@@ -1,22 +1,22 @@
-import { useState } from 'react'
-import { Image, Stack } from '@mantine/core'
-import { Memoji, Portrait } from '@/assets/images'
-import { Link } from 'react-router-dom'
-import { IconCode, IconFileText } from '@tabler/icons-react'
-import Typewriter from 'react-ts-typewriter'
+import { useState } from "react";
+import { Image, Stack } from "@mantine/core";
+import { Memoji, Portrait } from "@/assets/images";
+import { Link } from "react-router-dom";
+import { IconCode, IconFileText } from "@tabler/icons-react";
+import Typewriter from "react-ts-typewriter";
 
 const About = () => {
-  const [typewriterEnd, setTypewriterEnd] = useState(false)
+  const [typewriterEnd, setTypewriterEnd] = useState(false);
 
   const scrollProjectsToView = () => {
-    const projectsSection = document.getElementById('projects')
+    const projectsSection = document.getElementById("projects");
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' })
+      projectsSection.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   const text =
-    'My name is Joseph Nwobodo Jnr. I am a highly skilled and results-driven Frontend Developer with about six (6) years of hands-on experience creating visually stunning and user-friendly web applications. I have demonstrated a keen eye for design throughout my career, combining aesthetics with technical expertise to produce engaging and responsive interfaces. My commitment to clean code and accessibility ensures that my projects are visually appealing yet performant and scalable. I have successfully built products for individuals, institutions, and companies cutting across different sectors such as fin-tech, education, transportation & logistics, and real estate, ensuring customer satisfaction. I am currently the Lead Frontend Engineer at Trouvé Technologies.'
+    "My name is Joseph Nwobodo Jnr. I am a highly skilled and results-driven Frontend Developer with about six (6) years of hands-on experience creating visually stunning and user-friendly web applications. I have demonstrated a keen eye for design throughout my career, combining aesthetics with technical expertise to produce engaging and responsive interfaces. My commitment to clean code and accessibility ensures that my projects are visually appealing yet performant and scalable. I have successfully built products for individuals, institutions, and companies cutting across different sectors such as fin-tech, education, transportation & logistics, and real estate, ensuring customer satisfaction. I am currently the Lead Frontend Engineer at Trouvé Technologies.";
 
   return (
     <section className="about-section relative section--padding">
@@ -51,7 +51,7 @@ const About = () => {
                 </button>
                 <Link
                   target="_blank"
-                  to="https://drive.google.com/file/d/1sHgLB8aZ_ef4EQjSf3qt1i8j4lKZBkyC/view?usp=drive_link"
+                  to="https://drive.google.com/file/d/1qoY84XhbD_f_CfgVAauxCpu6_JxcRl_8/view?usp=drive_link"
                 >
                   <button>
                     <IconFileText className="mr-2" /> My Resume
@@ -63,7 +63,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

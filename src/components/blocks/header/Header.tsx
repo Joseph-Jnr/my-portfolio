@@ -1,12 +1,12 @@
-import { Orbit } from '@/components'
+import { Orbit } from "@/components";
 
 const Header = () => {
   return (
     <>
       <header>
-        <div className='md:tr--flex-row-between'>
-          <div className='intro-area'>
-            <h1 className='gradient--text'>
+        <div className="md:tr--flex-row-between">
+          <div className="intro-area">
+            <h1 className="gradient--text">
               Frontend <br /> Developer.
             </h1>
             <p>
@@ -15,13 +15,13 @@ const Header = () => {
             </p>
           </div>
 
-          <div className='orbit-wrapper'>
+          <div className="orbit-wrapper">
             <Orbit />
           </div>
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

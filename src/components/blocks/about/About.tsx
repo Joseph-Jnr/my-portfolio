@@ -51,7 +51,7 @@ const About = () => {
                 </button>
                 <Link
                   target="_blank"
-                  to="https://drive.google.com/file/d/1qoY84XhbD_f_CfgVAauxCpu6_JxcRl_8/view?usp=drive_link"
+                  to="https://drive.google.com/file/d/1_Oi8cV4njLVfaYKLR2GkuAst0PMey66d/view?usp=drive_link"
                 >
                   <button>
                     <IconFileText className="mr-2" /> My Resume

@@ -1,15 +1,15 @@
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet-async";
 
 type Props = {
-  title: string
-  description?: string
-}
+  title: string;
+  description?: string;
+};
 
-const PageHelmet = ({ title, description = '' }: Props) => (
+const PageHelmet = ({ title, description = "" }: Props) => (
   <Helmet title={`Joseph Jnr | ${title}`}>
-    <meta charSet='utf-8' />
-    <meta name='description' content={description} />
+    <meta charSet="utf-8" />
+    <meta name="description" content={description} />
   </Helmet>
-)
+);
 
-export default PageHelmet
+export default PageHelmet;

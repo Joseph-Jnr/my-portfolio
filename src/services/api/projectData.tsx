@@ -5,8 +5,8 @@ import {
   Foodify,
   Shipshore,
   Trouve,
-  Partyvest,
-  Drivewell,
+  //Partyvest,
+  //Drivewell,
 } from "@/assets/images";
 import {
   IconBrandCss3,
@@ -22,7 +22,7 @@ import {
 } from "@tabler/icons-react";
 
 const projectData = [
-  {
+  /* {
     id: 1,
     thumbnail: Partyvest,
     title: "Paryvest",
@@ -53,23 +53,7 @@ const projectData = [
       <IconBrandTypescript key="typescript" />,
       <IconBrandMantine key="mantine" />,
     ],
-  },
-  {
-    id: 3,
-    thumbnail: Chatter,
-    title: "Chatter",
-    description:
-      "A multi-functional platform where authors and readers can create and share content.",
-    links: {
-      github: "",
-      site: "https://chatter-appx.vercel.app",
-    },
-    technologies: [
-      <IconBrandNextjs key="next" />,
-      <IconBrandTypescript key="typescript" />,
-      <IconBrandMantine key="mantine" />,
-    ],
-  },
+  }, */
   {
     id: 4,
     thumbnail: Trouve,
@@ -85,6 +69,22 @@ const projectData = [
       <IconBrandTypescript key="typescript" />,
       <IconBrandTailwind key="tailwind" />,
       "GSAP",
+    ],
+  },
+  {
+    id: 3,
+    thumbnail: Chatter,
+    title: "Chatter",
+    description:
+      "A multi-functional platform where authors and readers can create and share content.",
+    links: {
+      github: "",
+      site: "https://chatter-appx.vercel.app",
+    },
+    technologies: [
+      <IconBrandNextjs key="next" />,
+      <IconBrandTypescript key="typescript" />,
+      <IconBrandMantine key="mantine" />,
     ],
   },
   {

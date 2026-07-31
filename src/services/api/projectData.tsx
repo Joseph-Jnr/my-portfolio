@@ -5,8 +5,8 @@ import {
   Foodify,
   Shipshore,
   Trouve,
-  //Partyvest,
-  //Drivewell,
+  Partyvest,
+  Drivewell,
 } from "@/assets/images";
 import {
   IconBrandCss3,
@@ -22,7 +22,7 @@ import {
 } from "@tabler/icons-react";
 
 const projectData = [
-  /* {
+  {
     id: 1,
     thumbnail: Partyvest,
     title: "Paryvest",
@@ -53,7 +53,7 @@ const projectData = [
       <IconBrandTypescript key="typescript" />,
       <IconBrandMantine key="mantine" />,
     ],
-  }, */
+  },
   {
     id: 4,
     thumbnail: Trouve,
@@ -62,7 +62,8 @@ const projectData = [
       "Book your ride in minutes and enjoy the convenience of effortless travel planning.",
     links: {
       github: "",
-      site: "https://trouve.africa",
+      site: "",
+      //site: "https://trouve.africa",
     },
     technologies: [
       <IconBrandReact key="react" />,

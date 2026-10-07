@@ -1,12 +1,12 @@
 import {
   AntiSapa,
   BicAdmin,
-  Chatter,
   Foodify,
   Shipshore,
   Trouve,
   Partyvest,
   Drivewell,
+  Swaply,
 } from "@/assets/images";
 import {
   IconBrandCss3,
@@ -25,12 +25,12 @@ const projectData = [
   {
     id: 1,
     thumbnail: Partyvest,
-    title: "Paryvest",
+    title: "Partyverse",
     description:
       "An all-in-one platform for effortless event planning, gifting, and attendance.",
     links: {
       github: "",
-      site: "https://partyvest.com/",
+      site: "https://partyverse.com/",
     },
     technologies: [
       <IconBrandNextjs key="next" />,
@@ -40,6 +40,23 @@ const projectData = [
   },
   {
     id: 2,
+    thumbnail: Swaply,
+    title: "Swaply",
+    description:
+      "Makes cross-border money transfers between Nigeria and Benin simple and seamless.",
+    links: {
+      github: "",
+      site: "https://swaply.africa",
+    },
+    technologies: [
+      <IconBrandNextjs key="next" />,
+      <IconBrandTypescript key="typescript" />,
+      <IconBrandTailwind key="tailwind" />,
+      "GSAP",
+    ],
+  },
+  {
+    id: 3,
     thumbnail: Drivewell,
     title: "Drivewell",
     description:
@@ -62,8 +79,7 @@ const projectData = [
       "Book your ride in minutes and enjoy the convenience of effortless travel planning.",
     links: {
       github: "",
-      site: "",
-      //site: "https://trouve.africa",
+      site: "https://ride.trouve.africa",
     },
     technologies: [
       <IconBrandReact key="react" />,
@@ -72,7 +88,7 @@ const projectData = [
       "GSAP",
     ],
   },
-  {
+  /* {
     id: 3,
     thumbnail: Chatter,
     title: "Chatter",
@@ -87,7 +103,7 @@ const projectData = [
       <IconBrandTypescript key="typescript" />,
       <IconBrandMantine key="mantine" />,
     ],
-  },
+  }, */
   {
     id: 5,
     thumbnail: Foodify,

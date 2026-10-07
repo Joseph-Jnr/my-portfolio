@@ -7,7 +7,7 @@ const Header = () => {
         <div className="md:tr--flex-row-between">
           <div className="intro-area">
             <h1 className="gradient--text">
-              Frontend <br /> Developer.
+              Software <br /> Engineer.
             </h1>
             <p>
               Incorporating solid technical bases with creative user interface

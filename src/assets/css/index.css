@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +19,7 @@
     padding: unset;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     @apply text-slate-400;
   }
 
@@ -45,7 +45,7 @@
   h4,
   h5,
   h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 
   /* This hides the native scrollbar */
@@ -102,7 +102,7 @@
   /* End of Flex Utilities */
 
   .gradient--text {
-    @apply bg-gradient-to-tr from-[#e5f9fc] via-[#fffaea] to-[#ffc3f0] bg-clip-text text-transparent w-fit leading-tight;
+    @apply bg-gradient-to-tr from-[#e5f9fc] via-[#fffaea] to-[#ffc3f0] bg-clip-text text-transparent w-fit leading-tight pb-[0.15em];
   }
 
   /* Blink animation */
@@ -124,7 +124,7 @@
 @layer components {
   .logo h3 {
     @apply text-slate-400 font-light text-xl;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
   }
 
   header {
@@ -169,7 +169,7 @@
     padding: 30px;
     border: 1px solid #273543;
     transition: all 0.5s ease-in-out;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
   }
 
   .about-section .btn-area button:hover {
@@ -181,7 +181,7 @@
   }
 
   .profile-image::after {
-    content: '';
+    content: "";
     @apply absolute top-5 left-7 border-2 border-white w-72 h-72 md:w-60 md:h-60 lg:w-72 lg:h-72 mx-auto rounded-lg;
   }
 
@@ -204,8 +204,20 @@
     border: 1px solid #1e1e1f;
   }
 
+  .project-card .thumbnail {
+    @apply overflow-hidden;
+  }
+
+  .project-card .thumbnail img {
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .project-card:hover .thumbnail img {
+    transform: scale(1.08);
+  }
+
   .project-card .desc {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
   }
   /* Projects end */
 
@@ -258,11 +270,11 @@
   opacity: 0.4;
 }
 
-ul[class^='ring'] {
+ul[class^="ring"] {
   @apply rounded-full border border-slate-600;
   transition: all 300ms ease-in-out;
 }
-ul[class^='ring'] li {
+ul[class^="ring"] li {
   transition: all 300ms ease-in-out;
   display: block;
   position: absolute;

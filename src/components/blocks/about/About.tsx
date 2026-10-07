@@ -16,7 +16,7 @@ const About = () => {
   };
 
   const text =
-    "My name is Joseph Nwobodo Jnr. I am a highly skilled and results-driven Frontend Developer with about six (6) years of hands-on experience creating visually stunning and user-friendly web applications. I have demonstrated a keen eye for design throughout my career, combining aesthetics with technical expertise to produce engaging and responsive interfaces. My commitment to clean code and accessibility ensures that my projects are visually appealing yet performant and scalable. I have successfully built products for individuals, institutions, and companies cutting across different sectors such as fin-tech, education, transportation & logistics, and real estate, ensuring customer satisfaction. I am currently the Lead Frontend Engineer at Trouvé Technologies.";
+    "I'm Joseph Nwobodo Jnr, a Senior Frontend Engineer with 6+ years of experience building scalable, high-performance web and mobile applications. I specialize in React, TypeScript, Next.js, React Native, and Angular, with experience across fintech, logistics, real estate, and operational platforms. I care deeply about building products that are not only technically sound, but intuitive, accessible, and visually refined. From secure transaction flows and complex admin systems to customer-facing products, I enjoy turning complex business requirements into simple, reliable experiences. I also bring a strong product design perspective to my engineering work, allowing me to bridge the gap between design, technology, and business.";
 
   return (
     <section className="about-section relative section--padding">
@@ -32,7 +32,8 @@ const About = () => {
           </p>
           {typewriterEnd && (
             <b className="italic" data-aos="zoom-in">
-              I seize every opportunity to learn new things.
+              I'm driven by the challenge of turning complex problems into
+              simple, meaningful products.
             </b>
           )}
         </Stack>
@@ -51,7 +52,7 @@ const About = () => {
                 </button>
                 <Link
                   target="_blank"
-                  to="https://drive.google.com/file/d/1TRMEbzng38UEy9M3xF81SkjrtwZGTGkO/view?usp=drive_link"
+                  to="https://drive.google.com/file/d/1k_BpcGpqlN3iZeA2Lumqm5gNNjqJbbwU/view?usp=drive_link"
                 >
                   <button>
                     <IconFileText className="mr-2" /> My Resume

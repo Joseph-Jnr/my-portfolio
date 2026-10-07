@@ -5,3 +5,4 @@ export { default as Shipshore } from "./shipshore.png";
 export { default as Chatter } from "./chatter.png";
 export { default as Partyvest } from "./partyvest.png";
 export { default as Drivewell } from "./drivewell.png";
+export { default as Swaply } from "./swaply.png";
